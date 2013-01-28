@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="reg-usuario">
+        <h2>Perfil:</h2>
+            <div class='my-forms'>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="my-forms-fields">
+                        {{ form.nickname.errors }}
+                        {{ form.nickname.label_tag }} {{ form.nickname}}
+                    </div>
+                    <div class="my-forms-fields">
+                        {{ form.nombre.errors }}
+                        {{ form.nombre.label_tag }} {{ form.nombre}}
+                    </div>
+                    <div class="my-forms-fields">
+                        {{ form.apellidos.errors }}
+                        {{ form.apellidos.label_tag }} {{ form.apellidos}}
+                    </div>
+                <input type="submit" action="" value="Login">
+                </form>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

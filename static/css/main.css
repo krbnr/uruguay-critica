@@ -1,0 +1,171 @@
+
+BODY{
+	
+
+}
+
+.content{
+	/*width: 940px;*/
+	background-color: #FAFAFA;
+	z-index: 100;
+	position: relative;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+	-o-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+	border-radius: 3px;
+	min-height: 500px;
+	margin-left: 0px;
+	
+}
+
+.footer{
+	height: 55px;
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.menu-box{
+	width: 940px;
+	position: relative;
+	top: 15px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-list{
+	margin-top: 10px;
+	float:left;     
+}
+
+.menu{
+	float:left;
+	list-style: none;
+	margin-left: 25px;
+	font-family: 'Broadway';
+}
+
+
+.menu a{
+	font-size: 16px;
+	color:#BBB;
+	padding: 3px 10px 3px 10px;
+	margin-left: 20px;
+
+
+	/*background:transparent url('../images/small-down-arrow-active.png') no-repeat right*/
+	
+
+}
+.menu a:hover{
+	text-decoration:none;
+	text-shadow:none;
+	color: #6C75D6;
+	background: white;
+	border-radius: 4px;
+	/*background: transparent url('../images/small-down-arrow-active.png') no-repeat right;*/
+}
+
+HEADER{
+
+	top: 0;
+	width: auto;
+
+}	
+.menu li{
+	padding-right:10px
+}
+.container{
+
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	position: relative;
+	min-height: 500px;
+	box-shadow: 3px 7px 17px rgba(0, 0, 0, 0.09);
+	-webkit-box-shadow: 3px 7px 17px rgba(0, 0, 0, 0.09);
+	-moz-box-shadow: 3px 7px 17px rgba(0, 0, 0, 0.09);
+	-o-box-shadow: 3px 7px 17px rgba(0, 0, 0, 0.09);
+	border-radius: 3px;
+	width: 940px;
+	padding: 20px 30px;
+}
+
+.menu-side{
+	float: right;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+.menu-side a{
+	float: right;
+	color: white;
+	padding:5px 25px 5px 25px;
+	
+}
+
+.row{
+	margin-bottom: 50px;
+	margin-left: 0;
+}
+
+.main-title{
+	margin: 30px 0px 0px 40px;
+}
+
+.aside {
+	float: right;
+	display: block;
+	padding: 10px;
+	width: 200px;
+}
+input[type="text"], input[type="password"] {
+	width: 382px;
+}
+
+.my-forms {
+	margin-top: 25px;
+}
+.my-forms-fields ul.errorlist li  {
+float: right;
+margin-top: 25px;
+margin-right: 50px;
+color: red;
+}
+
+.my-forms input[type="submit"] {
+	margin-top: 20px;
+}
+
+.reg-usuario {
+
+}
+
+.pelicula .peli-header {
+	width: 100%;
+	height: 400px;
+	background-image: url('../../static/images/x3.jpg');
+	zoom: 0.4;
+	background-position-y: -60;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-top: 4px solid #A5A5A5;
+}
+
+.peli-content .title p {
+	margin-left: 10px;
+}
+
+.reg-usuario {
+	padding: 10px 30px;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-menu a{
+    margin-left: 20px;
+}

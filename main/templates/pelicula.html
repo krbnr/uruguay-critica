@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="pelicula row">
+        <div class="title">
+            <hr />
+            <p><strong>{{ Pelicula.titulo }}</strong></p>
+            <hr>
+        </div>
+        <div class="features">
+            <div class="peli-content row">
+                <div class="title">
+                    <hr />
+
+                    <hr>
+                </div>
+                <p>Duracion: {{ Pelicula.duracion }}</p>
+                <hr />
+                <p>Genero: {{ Pelicula.genero }}</p>
+                <hr />
+                <p>Director: <a href="http://en.wikipedia.org/wiki/{{ Pelicula.director.split|join:"_" }}">{{ Pelicula.director }}</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
