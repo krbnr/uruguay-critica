@@ -7,16 +7,21 @@
                     {% csrf_token %}
                     <div class="my-forms-fields">
                         {{ form.nickname.errors }}
-                        {{ form.nickname.label_tag }} {{ form.nickname}}
+                        {{ form.nickname.label_tag }} {{ form.nickname }}
                     </div>
                     <div class="my-forms-fields">
                         {{ form.nombre.errors }}
-                        {{ form.nombre.label_tag }} {{ form.nombre}}
+                        {{ form.nombre.label_tag }} {{ form.nombre }}
                     </div>
                     <div class="my-forms-fields">
                         {{ form.apellidos.errors }}
-                        {{ form.apellidos.label_tag }} {{ form.apellidos}}
+                        {{ form.apellidos.label_tag }} {{ form.apellidos }}
                     </div>
+
+                        <p>{{ usuario }}</p>
+
+                    
+
                 <input type="submit" action="" value="Login">
                 </form>
             </div>

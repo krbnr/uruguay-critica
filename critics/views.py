@@ -31,6 +31,9 @@ def registrarcritico(request):
             critic.fecha_de_nacimiento = form.cleaned_data['fecha_de_nacimiento']
             critic.Descripcion_personal = form.cleaned_data['Descripcion_personal']
             """
+            #This is the correct way?
+            auth_user = authenticate(username=form.cleaned_data['nickname'], password=form.cleaned_data['password'])
+            login(request, auth_user)
             return HttpResponseRedirect('/perfil/')
         else:
             return render_to_response('registro.html', {'form': form}, context_instance=RequestContext(request))
@@ -72,6 +75,9 @@ def verperfil(request):
     else:
         form = RegistrationForm()
         #TODO get user data
-        usuario = ''
+        #usuario = ''
+        #usuario  = request.user.get_profile()
+
+        usuario = request.user
         context = {'form': form, 'usuario': usuario}
         return render_to_response('perfil.html', context, context_instance=RequestContext(request))

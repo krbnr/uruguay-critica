@@ -12,7 +12,7 @@ class RegistrationForm(ModelForm):
     password2				=forms.CharField(label=(u'Confirmar Password: '), widget=forms.PasswordInput(render_value=False), initial=None)
     cine_de_preferencia		=forms.CharField(label=(u'Cine preferido (ej: Movie Center Portones) '), required=False)
     peliculas_preferidas	=forms.CharField(label=(u'Peliculas favoritas(separadas por coma) '), required=False)
-    '''this is for descripcion (widget=forms.TextArea)'''
+    #to attach a label to a form field, this is the best practice?
 
     def __init__(self, *args, **kwargs):
         super(RegistrationForm, self).__init__(*args, **kwargs)
