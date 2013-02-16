@@ -84,7 +84,7 @@ TEMPLATE_DIRS = (
 )
 
 
-AUTH_PROFILE_MODULE = '../critics.critic'
+AUTH_PROFILE_MODULE = 'critics.critic'
 
 INSTALLED_APPS = (
     'django.contrib.auth',

@@ -12,20 +12,17 @@ def registrarcritico(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
-            user = User.objects.create_user(username = form.cleaned_data['nickname'], email = form.cleaned_data['email'], password = form.cleaned_data['password'])
+            user = User.objects.create_user(username = form.cleaned_data['nickname'],
+                email = form.cleaned_data['email'], password = form.cleaned_data['password'])
             user.save()
             #critic = user.get_profile()
             #critic.nickname = form.cleaned_data['nickname']
             #critic.nombre = form.cleaned_data['nombre']
             #critic.apellidos = form.cleaned_data['apellidos']
-            Critic = critic(user=user, nickname=form.cleaned_data['nickname'], nombre=form.cleaned_data['nombre'], apellidos=form.cleaned_data['apellidos'])
+            Critic = critic(user=user, nickname=form.cleaned_data['nickname'], nombre=form.cleaned_data['nombre'],
+                apellidos=form.cleaned_data['apellidos'])
             Critic.save()
             """
-            user = User.objects.create_user(username=form.cleaned_data['username'], email = form.cleaned_data['email'], password = form.cleaned_data['password'])
-            user.save()
-            drinker = Drinker(user=user, name=form.cleaned_data['name'], birthday=form.cleaned_data['birthday'])
-            drinker.save()
-            critic.save()
             critic.cine_de_preferencia = form.cleaned_data['cine_de_preferencia']
             critic.peliculas_preferidas = form.cleaned_data['peliculas_preferidas']
             critic.fecha_de_nacimiento = form.cleaned_data['fecha_de_nacimiento']
@@ -73,11 +70,10 @@ def verperfil(request):
     if request.method == 'POST':
         pass
     else:
-        form = RegistrationForm()
+        #form = RegistrationForm()
         #TODO get user data
-        #usuario = ''
-        #usuario  = request.user.get_profile()
-
         usuario = request.user
-        context = {'form': form, 'usuario': usuario}
+        perfil = usuario.get_profile()
+        #user_profile = usuario.get_profile()
+        context = {'user': usuario, 'perfil': perfil}
         return render_to_response('perfil.html', context, context_instance=RequestContext(request))

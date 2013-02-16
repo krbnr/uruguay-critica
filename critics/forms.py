@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.forms import ModelForm
 from critics.models import critic
 
+
 class RegistrationForm(ModelForm):
     nickname			    =forms.CharField(label=(u'Nombre de Usuario(Nickname) '))
     nombre					=forms.CharField(label=(u'Nombre '))
@@ -16,6 +17,7 @@ class RegistrationForm(ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(RegistrationForm, self).__init__(*args, **kwargs)
+        #Warning here the order of fields also hide the ones that not are on the list
         self.fields.keyOrder = [
         'nickname',
         'nombre',
@@ -23,6 +25,7 @@ class RegistrationForm(ModelForm):
         'email',
         'password',
         'password2',
+        'peliculas_preferidas',
         ]
 
     class Meta:

@@ -4,28 +4,24 @@
         <h2>Perfil:</h2>
             <div class='my-forms'>
                 <form action="" method="POST">
-                    {% csrf_token %}
-                    <div class="my-forms-fields">
-                        {{ form.nickname.errors }}
-                        {{ form.nickname.label_tag }} {{ form.nickname }}
+                    <div class="my-forms-fields span4">
+                        <p><input id="nickname" name="nickname" type="text" placeholder="Nickname: {{ perfil.nickname }}"></p>
+                        <p><input id="nombre" name="nombre" type="text" placeholder="Nombre: {{ perfil.nombre }}"></p>
+                        <p><input id="apellidos" name="apellidos" type="text" placeholder="Apellidos: {{ perfil.apellidos }}"></p>
+                        <p><input id="email" name="email" type="email" placeholder="E-mail: {{ user.email }}"></p>
+                        <p><input id="password1" name="password1" type="password" placeholder="Nuevo Password"></p>
+                        <p><input id="password2" name="password2" type="password" placeholder="Confirmacion de Password"></p>
                     </div>
-                    <div class="my-forms-fields">
-                        {{ form.nombre.errors }}
-                        {{ form.nombre.label_tag }} {{ form.nombre }}
+                    <div class="my-forms-fields profile-scondary span4">
+                        <h4>Datos adicionales:</h4>
+                        <p><input id="fecha_de_nacimiento" name="fecha_de_nacimiento" type="text" placeholder="Fecha de Nacimiento: {{ perfil.fecha_de_nacimiento }}"></p>
+                        <p><input id="peliculas_preferidas" name="peliculas_preferidas" type="text" placeholder="Peliculas Preferidas: {{ perfil.peliculas_preferidas }}"></p>
+
+
                     </div>
-                    <div class="my-forms-fields">
-                        {{ form.apellidos.errors }}
-                        {{ form.apellidos.label_tag }} {{ form.apellidos }}
-                    </div>
-
-                        <p>{{ usuario }}</p>
-
-                    
-
-                <input type="submit" action="" value="Login">
+                <input type="submit" action="" value="Save changes">
                 </form>
-            </div>
-        </div>
 
+        </div>
     </div>
 {% endblock %}
