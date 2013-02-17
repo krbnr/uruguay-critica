@@ -67,6 +67,8 @@ def logutrequest(request):
     return HttpResponseRedirect('/')
 
 def verperfil(request):
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect('/login/')
     if request.method == 'POST':
         pass
     else:

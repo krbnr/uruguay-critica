@@ -12,7 +12,7 @@ class critic(models.Model):
     manitos_arriba			=models.IntegerField(null=True, blank=True)
     reviews					=models.IntegerField(null=True, blank=True)
     imagen					=models.URLField(max_length=200, null=True, blank=True)
-    Descripcion_personal	=models.CharField(max_length=100, null=True, blank=True)
+    frase_favorita	        =models.CharField(max_length=100, null=True, blank=True)
     cine_de_preferencia		=models.CharField(max_length=100, null=True, blank=True)
     peliculas_preferidas	=models.CharField(max_length=200, null=True, blank=True)
 

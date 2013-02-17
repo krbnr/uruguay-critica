@@ -23,16 +23,25 @@
       <file leaf-file-name="perfil.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/critics/templates/perfil.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="132" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-8.125">
+            <state line="22" column="46" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-9.916667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="38" selection-start="723" selection-end="723" vertical-scroll-proportion="0.3858521">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="48" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.61206895">
+            <state line="149" column="22" selection-start="2315" selection-end="2315" vertical-scroll-proportion="0.87096775">
               <folding />
             </state>
           </provider>
@@ -41,10 +50,8 @@
       <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/critics/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="29" selection-start="1302" selection-end="1322" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state line="27" column="30" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,7 +59,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/critics/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="38" selection-start="3324" selection-end="3324" vertical-scroll-proportion="0.0">
+            <state line="70" column="46" selection-start="3226" selection-end="3226" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,7 +68,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/critics/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="367" selection-end="386" vertical-scroll-proportion="0.0">
+            <state line="10" column="19" selection-start="437" selection-end="452" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,26 +88,26 @@
         <option value="$PROJECT_DIR$/main/peliculas.html" />
         <option value="$PROJECT_DIR$/main/templates/peliculas.html" />
         <option value="$PROJECT_DIR$/main/pelicula.html" />
-        <option value="$PROJECT_DIR$/critics/models.py" />
         <option value="$PROJECT_DIR$/main/urls.py" />
         <option value="$PROJECT_DIR$/main/templates/pelicula.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/main/views.py" />
         <option value="$PROJECT_DIR$/critics/templates/registro.html" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/critics/forms.py" />
         <option value="$PROJECT_DIR$/uruguay_critica/settings.py" />
+        <option value="$PROJECT_DIR$/critics/models.py" />
         <option value="$PROJECT_DIR$/critics/views.py" />
-        <option value="$PROJECT_DIR$/critics/templates/perfil.html" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
+        <option value="$PROJECT_DIR$/critics/templates/perfil.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="52" />
     <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="height" value="716" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -278,13 +285,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../zinmoo/sophilabs/zinmoo" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -464,23 +471,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="65" y="52" width="1301" height="716" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23980816" sideWeight="0.22347267" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23980816" sideWeight="0.65434086" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24419536" sideWeight="0.64247787" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34565917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35752213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -539,11 +546,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="83" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" />
@@ -586,53 +588,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/critics/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="38" selection-start="3324" selection-end="3324" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/critics/templates/registro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="59" selection-start="337" selection-end="337" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
+        <state line="10" column="59" selection-start="337" selection-end="337" vertical-scroll-proportion="-6.25" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/critics/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="665" selection-end="665" vertical-scroll-proportion="0.83383685">
-          <folding />
-        </state>
+        <state line="19" column="0" selection-start="665" selection-end="665" vertical-scroll-proportion="0.83383685" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/critics/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="29" selection-start="1302" selection-end="1322" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/critics/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="367" selection-end="386" vertical-scroll-proportion="0.0">
+        <state line="27" column="30" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/critics/templates/perfil.html">
+    <entry file="file://$PROJECT_DIR$/critics/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="132" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-8.125">
+        <state line="70" column="46" selection-start="3226" selection-end="3226" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="48" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.61206895">
+        <state line="149" column="22" selection-start="2315" selection-end="2315" vertical-scroll-proportion="0.87096775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/critics/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="19" selection-start="437" selection-end="452" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/critics/templates/perfil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="46" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-9.916667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="38" selection-start="723" selection-end="723" vertical-scroll-proportion="0.3858521">
           <folding />
         </state>
       </provider>

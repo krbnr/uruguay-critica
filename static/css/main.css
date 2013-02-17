@@ -123,6 +123,7 @@ HEADER{
 	display: block;
 	padding: 10px;
 	width: 200px;
+    color: red;
 }
 input[type="text"], input[type="password"], input[type="email"] {
 	width: 245px;
@@ -143,6 +144,14 @@ color: red;
 }
 
 .reg-usuario {
+    padding-left: 20px;
+    background-color: white;
+    color: #696969;
+    min-height: 560px;
+    padding: 10px 30px;
+}
+.reg-usuario ::-webkit-input-placeholder,.reg-usuario  :-moz-placeholder{
+    color: green;
 
 }
 
@@ -159,10 +168,6 @@ color: red;
 
 .peli-content .title p {
 	margin-left: 10px;
-}
-
-.reg-usuario {
-	padding: 10px 30px;
 }
 
 .footer-container {

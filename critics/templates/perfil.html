@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="reg-usuario">
-        <h2>Perfil:</h2>
+    <div class="reg-usuario" xmlns="http://www.w3.org/1999/html">
+        <h2>Perfil</h2>
             <div class='my-forms'>
                 <form action="" method="POST">
                     <div class="my-forms-fields span4">
@@ -9,17 +9,21 @@
                         <p><input id="nombre" name="nombre" type="text" placeholder="Nombre: {{ perfil.nombre }}"></p>
                         <p><input id="apellidos" name="apellidos" type="text" placeholder="Apellidos: {{ perfil.apellidos }}"></p>
                         <p><input id="email" name="email" type="email" placeholder="E-mail: {{ user.email }}"></p>
-                        <p><input id="password1" name="password1" type="password" placeholder="Nuevo Password"></p>
-                        <p><input id="password2" name="password2" type="password" placeholder="Confirmacion de Password"></p>
+                        <p><input id="frase_favorita" name="fecha_de_nacimiento" type="text" placeholder="Frase favorita: {% if perfil.frase_favorita%}{{ perfil.frase_favorita }}{% endif %}"></p>
+                        <p><input id="fecha_de_nacimiento" name="fecha_de_nacimiento" type="text" placeholder="Fecha de Nacimiento: {% if perfil.fecha_de_nacimiento %}{{ perfil.fecha_de_nacimiento }}{% endif %}"></p>
+                        <p><input id="peliculas_preferidas" name="peliculas_preferidas" type="text" placeholder="Peliculas Preferidas: {% if perfil.peliculas_preferidas %}{{ perfil.peliculas_preferidas }}{% endif %}"></p>
+                        <p><input id="cine_de_preferencia" name="cine_de_preferencia" type="text" placeholder="Cine de Preferencia: {% if perfil.cine_de_preferencia%}{{ perfil.cine_de_preferencia}}{% endif %}"></p>
+                        <p><a href="editar-password">Cambiar password</a></p>
                     </div>
                     <div class="my-forms-fields profile-scondary span4">
-                        <h4>Datos adicionales:</h4>
-                        <p><input id="fecha_de_nacimiento" name="fecha_de_nacimiento" type="text" placeholder="Fecha de Nacimiento: {{ perfil.fecha_de_nacimiento }}"></p>
-                        <p><input id="peliculas_preferidas" name="peliculas_preferidas" type="text" placeholder="Peliculas Preferidas: {{ perfil.peliculas_preferidas }}"></p>
-
-
+                        <h5 class="forms-subtitle">Datos opcionales</h5>
+                        <p><input id="imagen" name="imagen" type="text" placeholder="Imagen: {% if perfil.imagen%}{{ perfil.imagen }}{% endif %}"><a class="btn btn-mini btn-danger" href="upload-img">Examinar</a></p>
+                        <label>Manos arriba</label>
+                        <label>Emblemas</label>
+                        <label>Reviews</label>
                     </div>
-                <input type="submit" action="" value="Save changes">
+                    <div class="span8"><input class="btn btn-danger" type="submit" action="" value="Save changes"></div>
+
                 </form>
 
         </div>
