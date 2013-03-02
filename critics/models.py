@@ -1,30 +1,55 @@
 from django.db import models
-from django.db.models.signals import post_save
-from django.contrib.auth.models import User
+import uuid
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 
-class critic(models.Model):
-    user					=models.OneToOneField(User)
+class UserManager(BaseUserManager):
+
+    def get_from_email(self, email):
+        return self.get(email=email, deleted=None)
+
+
+class critic(AbstractBaseUser, PermissionsMixin):
+
+    USERNAME_FIELD = 'email'
+
     nickname				=models.CharField(max_length=200)
+    email                   =models.EmailField(max_length=200, unique=True)
+    external_id = models.CharField(max_length=32, unique=True)
     nombre					=models.CharField(max_length=200)
-    apellidos				=models.CharField(max_length=200, null=True, blank=True)
-    fecha_de_nacimiento		=models.DateTimeField(null=True, blank=True)
-    codigo_emblemas			=models.CommaSeparatedIntegerField(max_length=1000, null=True, blank=True)
-    manitos_arriba			=models.IntegerField(null=True, blank=True)
-    reviews					=models.IntegerField(null=True, blank=True)
-    imagen					=models.URLField(max_length=200, null=True, blank=True)
-    frase_favorita	        =models.CharField(max_length=100, null=True, blank=True)
-    cine_de_preferencia		=models.CharField(max_length=100, null=True, blank=True)
-    peliculas_preferidas	=models.CharField(max_length=200, null=True, blank=True)
+    apellidos				=models.CharField(max_length=200)
+    fecha_de_nacimiento		=models.DateTimeField()
+    codigo_emblemas			=models.CommaSeparatedIntegerField(max_length=1000)
+    manitos_arriba			=models.IntegerField()
+    reviews					=models.IntegerField()
+    imagen					=models.ImageField(upload_to = '/static/images/profile/')
+    frase_favorita	        =models.CharField(max_length=100)
+    cine_de_preferencia		=models.CharField(max_length=100)
+    peliculas_preferidas	=models.CharField(max_length=200)
+
+    objects = UserManager()
+
+    REQUIRED_FIELDS = ['date_of_birth', 'height']
+
+    @staticmethod
+    def is_new_email(email):
+        try:
+            critic.objects.get_from_email(email.lower().strip())
+            return False
+        except critic.DoesNotExist:
+            return True
+
+    def save(self, *args, **kwargs):
+        if not self.external_id:
+            while 1:
+                self.external_id = uuid.uuid4().hex
+                try:
+                    critic.objects.get(external_id=self.external_id)
+                except self.DoesNotExist:
+                    break
+        super(critic, self).save(*args, **kwargs)
+
+
+
 
     def __unicode__(self):
-        return self.nickname
-"""
-def create_user_profile(sender, instance, created, **kwargs):
-    #Create the UserProfile when a new User is saved
-    if created:
-        profile = critic()
-        profile.user = instance
-        profile.save()
-
-post_save.connect(create_user_profile, sender=User)
-"""
+        return self.email
